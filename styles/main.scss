@@ -1,0 +1,176 @@
+---
+---
+
+@import "mixins";
+@import "variables";
+@import "bootstrap/variables";
+@import "bootstrap/mixins/lists";
+@import "bootstrap/mixins/hover";
+@import "bootstrap/mixins/clearfix";
+@import "bootstrap/mixins/breakpoints";
+@import "bootstrap/mixins/grid-framework";
+@import "bootstrap/mixins/grid";
+@import "bootstrap/mixins/visibility";
+@import "bootstrap/utilities/visibility";
+@import "bootstrap/normalize";
+@import "bootstrap/reboot";
+@import "bootstrap/grid";
+@import "bootstrap/type";
+
+body {
+  margin-top: 2rem;
+}
+
+p {
+  line-height: 1.4rem;
+  font-weight: 300;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+// Structural base
+.header {
+  border-top: 8px solid $gray-dark;
+  border-bottom: 1px solid $gray-dark;
+  padding-top: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  a {
+    &:hover {
+      color: $gray-dark;
+    }
+  }
+}
+
+.headline {
+  border-top: 1px solid $gray-dark;
+  border-bottom: 1px solid $gray-dark;
+  padding: 1.5rem 0 1.5rem 0;
+  margin: 2rem 0 2rem 0;
+
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    font-kerning: normal;
+    letter-spacing: -0.1rem;
+    margin: 0;
+    line-height: 3.8rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 2.5rem;
+      line-height: 2.2rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 3rem;
+      line-height: 2.6rem;
+    }
+  }
+}
+
+.midline {
+  border-left: 1px solid $gray-dark;
+  border-right: 1px solid $gray-dark;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-kerning: normal;
+    line-height: 2.6rem;
+    letter-spacing: -1px;
+  }
+}
+
+.content-midline {
+  border-left: 1px solid $gray-dark;
+}
+
+// Special typography
+.title {
+  font-size: 6rem;
+  font-weight: 700;
+  font-kerning: normal;
+  letter-spacing: -0.3rem;
+  margin: 0;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 4rem;
+  }
+}
+
+.timestamp {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-kerning: normal;
+  letter-spacing: -0.1rem;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
+.highlight {
+  color: $blue;
+}
+
+// Social thingies
+.social {
+  float: right;
+
+  a {
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.social-inline {
+  text-align: center;
+
+  a {
+    display: inline-block;
+
+    .icon > svg {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
+
+.icon > svg {
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding: 0.2rem;
+
+  path {
+    fill: $gray-dark;
+  }
+}
+
+// Article
+article {
+  header {
+    h1 {
+      font-weight: 500;
+      font-size: 1.6rem;
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+}

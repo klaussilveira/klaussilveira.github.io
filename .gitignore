@@ -1,0 +1,4 @@
+_site/
+_bower/
+.sass-cache
+.jekyll-metadata

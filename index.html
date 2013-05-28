@@ -1,0 +1,45 @@
+---
+layout: base
+---
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="row">
+      <div class="col-md-6">
+        <p>Helping teams overcome the challenges of object-oriented design and distributed architecture, as well as improving their skills in the software development lifecycle has been my goal and also one of my strongest skills.</p>
+      </div>
+      <div class="col-md-6">
+        <p>I'm passionate about building things and doing what i believe is great work. I design software that brings ideas and concepts to fruition, while delivering cutting-edge technology solutions that directly impact businesses.</p>
+      </div>
+      <div class="col-md-12">
+        <div class="row headline">
+          <div class="col-md-12">
+            <h1>Software Architecture<br />&amp;<span class="highlight">Craftsmanship</span>.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <p>You might want to reach out in order to discuss the development of a project. Or maybe your development team is struggling with a problem and could use some advice. Either way, feel free to <a href="mailto:{{ site.email }}">send me an email</a> or to check my <a href="https://www.linkedin.com/in/klaussilveira">LinkedIn</a> to know even more about me and my professional experience.</p>
+    <div class="social-inline hidden-sm-up">
+      <a href="https://github.com/{{ site.username }}"><span class="icon">{% include icon-github.svg %}</span></a>
+      <a href="https://twitter.com/{{ site.username }}"><span class="icon">{% include icon-twitter.svg %}</span></a>
+    </div>
+    <p>As a contributor to several open-source projects and a proud member of the <a href="http://fsf.org">FSF</a>, i believe that free and open source software can change our industry. While i do prefer to contribute to existing projects, i also have some of <a href="https://github.com/klaussilveira">my own</a>, which vary between wild coding experiments, to applications and libraries.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-9">
+    {% for post in site.posts %}
+      <h2>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </h2>
+      {{ post.excerpt }}
+    {% endfor %}
+  </div>
+  <div class="col-md-3 midline">
+    <h2>ramblings, insights<br />&amp;<span class="highlight">projects</span></h2>
+  </div>
+</div>

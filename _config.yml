@@ -1,0 +1,15 @@
+title: Klaus Silveira | Software Architect
+email: hello@klaussilveira.com
+description: >
+  I'm a software architect, passionate about building things and doing good work. I work as a consultant and speaker, helping teams unlock their potential and spark innovation in their companies.
+repository: klaussilveira/klaussilveira.github.io
+url: "http://klaussilveira.com"
+username: klaussilveira
+markdown: kramdown
+permalink: /:title.html
+sass:
+    style: compressed
+exclude:
+  - Rakefile
+  - Gemfile*
+  - bower.json

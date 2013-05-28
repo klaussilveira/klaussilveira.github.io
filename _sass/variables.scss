@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+// Structure
+
+// Colors
+$body-bg: #e8e8e8;
+$gray-dark: #000;
+$gray: #333;
+$gray-light: #666;
+$gray-lighter: #999;
+$gray-lightest: #EEE;
+$body-color: $gray-dark;
+
+$red: #eb221b;
+$orange: #f25f19;
+$magenta: #ed008c;
+$blue: #00adf0;
+$green: #4e9b09;
+$gold: #f2b401;
+
+$brand-primary: $gray-dark;
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+// Typography
+$font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+$font-size-h1: 2rem;
+$font-size-h2: 1.25rem;
+$font-size-h3: 1rem;
+$font-size-h4: 0.5rem;
+$font-size-h5: 0.25rem;
+$font-size-h6: 0.1rem;
+$display1-weight: 400;
+$display2-weight: 400;
+$display3-weight: 400;
+$display4-weight: 400;
+$headings-font-weight: 500;
+
+// Links
+$link-color: $gray-dark;
+$link-decoration: underline;
+$link-hover-decoration: none;
